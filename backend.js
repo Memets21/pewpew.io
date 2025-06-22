@@ -9,7 +9,7 @@ const socket = io('https://pewpew-backend.onrender.com');
 
 const port = 3000
 
-app.use(express.static('public'))
+app.use(express.static())
 
 app.get('/', (req, res) => {
   res.sendFile(__dirname + '/index.html')
